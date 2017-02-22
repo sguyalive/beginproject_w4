@@ -8,7 +8,21 @@
 </head>
 <body>
 
-    <div id="wrapper-menu">
+    <div id="wrapper-menu2">
+
+
+    		<div class="title">
+					รายการ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					จำนวน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					ราคา
+			<hr>
+
+					ชาเชียวเย็น&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					20.-
+			</div>			
+
+
     	<div class="btn-b1">
     		<button id="btnmenu"></button>
     			<!-- The Modal -->
@@ -39,7 +53,7 @@
 								  	</form>	
 							  	</div>
 							  	<div class="p">ราคา &nbsp; 20 &nbsp; บาท</div>
-							  	<button class="ok" onclick="location.href='select.php';">ตกลง</button>
+							  	<button class="ok">ตกลง</button>
 					    	</div>
 					  </div>
 				</div>
@@ -73,7 +87,7 @@
 								  	</form>	
 							  	</div>
 							  	<div class="p">ราคา &nbsp; 20 &nbsp; บาท</div>
-							  	<button class="ok" onclick="location.href='select.php';">ตกลง</button>
+							  	<button class="ok">ตกลง</button>
 					    	</div>
 					  </div>
 				</div>
@@ -107,7 +121,7 @@
 								  	</form>	
 							  	</div>
 							  	<div class="p">ราคา &nbsp; 20 &nbsp; บาท</div>
-							  	<button class="ok" onclick="location.href='select.php';">ตกลง</button>
+							  	<button class="ok">ตกลง</button>
 					    	</div>
 					  </div>
 				</div>
@@ -141,7 +155,7 @@
 								  	</form>	
 							  	</div>
 							  	<div class="p">ราคา &nbsp; 20 &nbsp; บาท</div>
-							  	<button class="ok" onclick="location.href='select.php';">ตกลง</button>
+							  	<button class="ok">ตกลง</button>
 					    	</div>
 					  </div>
 				</div>
@@ -175,7 +189,7 @@
 								  	</form>	
 							  	</div>
 							  	<div class="p">ราคา &nbsp; 20 &nbsp; บาท</div>
-							  	<button class="ok" onclick="location.href='select.php';">ตกลง</button>
+							  	<button class="ok">ตกลง</button>
 					    	</div>
 					  </div>
 				</div>
@@ -209,13 +223,32 @@
 								  	</form>	
 							  	</div>
 							  	<div class="p">ราคา &nbsp; 20 &nbsp; บาท</div>
-							  	<button class="ok" onclick="location.href='select.php';">ตกลง</button>
+							  	<button class="ok">ตกลง</button>
 					    	</div>
 					  </div>
 				</div>
-
     	</div>
+
+    		   <div class="sub">
+					รวมทั้งหมด &nbsp; 20 &nbsp; บาท 
+				</div>
+				<div class="all">
+					<button id="complete">ทำรายการเสร็จสิ้น</button>
+						<!-- The Modal -->
+						<div id="myModal7" class="modal">
+		    			<!-- Modal content -->
+							  <div class="modal-content-sub">
+								   <div class="finish">
+								   		-- คุณได้ทำรายการเสร็จสิ้น --<br>
+								   		<div id="q">คิวที่1<br></div>
+								   		กรุณารอเครื่องดื่มสักครู่
+								   		<button class="fin" onclick="location.href='index.php';">ตกลง</button>
+								   </div>
+							  </div>
+						</div>
+				</div>
     </div>
+
 
 
 <script>
@@ -226,6 +259,7 @@ var modal3 = document.getElementById('myModal3');
 var modal4 = document.getElementById('myModal4');
 var modal5 = document.getElementById('myModal5');
 var modal6 = document.getElementById('myModal6');
+var modal7 = document.getElementById('myModal7');
 
 // Get the button that opens the modal
 var btn = document.getElementById("btnmenu");
@@ -234,6 +268,8 @@ var btn3 = document.getElementById("btnmenu3");
 var btn4 = document.getElementById("btnmenu4");
 var btn5 = document.getElementById("btnmenu5");
 var btn6 = document.getElementById("btnmenu6");
+var btn7 = document.getElementById("complete");
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -262,6 +298,9 @@ btn5.onclick = function() {
 btn6.onclick = function() {
     modal6.style.display = "block";
 }
+btn7.onclick = function() {
+    modal7.style.display = "block";
+}
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -281,6 +320,9 @@ span5.onclick = function() {
 }
 span6.onclick = function() {
     modal6.style.display = "none";
+}
+span7.onclick = function() {
+    modal7.style.display = "none";
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
